@@ -112,6 +112,10 @@ li:after {
     display: inline-block;
 }
 
+#modal-12 > div > div > div.ui.form > div.ui.toggle.checkbox > label > a {
+    color: #FFFFFF;
+}
+
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;

@@ -11,6 +11,7 @@
 
   <!-- Import components packages -->
   <link rel="stylesheet" type="text/css" href="./semantic/dist/components/reset.css">
+  <link rel="stylesheet" type="text/css" href="./semantic/dist/components/checkbox.css">
   <link rel="stylesheet" type="text/css" href="./semantic/dist/components/site.css">
   <link rel="stylesheet" type="text/css" href="./semantic/dist/components/container.css">
   <link rel="stylesheet" type="text/css" href="./semantic/dist/components/grid.css">
@@ -39,6 +40,11 @@
   <script src="./semantic/dist/components/visibility.js"></script>
   <script src="./semantic/dist/components/sidebar.js"></script>
   <script src="./semantic/dist/components/transition.js"></script>
+  <script type="text/javascript" src="./semantic/dist/components/checkbox.js"></script>
+  <script type="text/javascript">
+    $('.ui.checkbox').checkbox();
+    $('.ui.radio.checkbox').checkbox();
+  </script>
   <script>
     /* If the user resizes the window this ensures that the correct height is set */
     $(window).resize(function () {
@@ -151,14 +157,6 @@
             <p>Visualizza tutti gli esami effettuati nella struttura alla pagina dedicata, <a href="">qui</a>.</p>
           </div>
           <div class="six wide right floated column">
-            <!-- Contact form -->
-            <form>
-              <label for="nome">Nominativo</label>
-              <input id="nome" type="text" required>
-              <label for="email">Email</label>
-              <input id="email" type="email" required>
-              <button type="submit">INVIA</button>
-            </form>
           </div>
         </div>
       </div>
@@ -224,18 +222,27 @@
       </div>
     </div>
   </div>
-  <!-- Modal -->
+  <!-- Modal: hidden by default/page load -->
   <div class="md-modal md-effect-12" id="modal-12">
     <div class="md-content">
-      <h3>Modal Dialog</h3>
+      <h3>Contattaci</h3>
       <div>
-        <p>This is a modal window. You can do the following things with it:</p>
-        <ul>
-          <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-          <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-          <li><strong>Close:</strong> click on the button below to close the modal.</li>
-        </ul>
-        <button class="md-close">Close me!</button>
+        <p>Riempi il form qua sotto per richiedere informazioni</p>
+        <!-- Contact form -->
+        <div class="ui form" role="form">
+          <div class="ui toggle checkbox">
+            <input type="checkbox" name="public">
+            <label>Accetto l'informativa della <a href="#" target="_blank">privacy</a>.</label>
+          </div>
+          <button class="ui button" type="submit">Submit</button>
+        </div>
+        <div class="container">
+          <section>
+            <p>
+              <button class="btn btn-5 btn-5b icon-times md-close"><span><i class="icon close"></i>Chiudi</span></button>
+            </p>
+          </section>
+        </div>
       </div>
     </div>
   </div>
