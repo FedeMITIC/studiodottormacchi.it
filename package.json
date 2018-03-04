@@ -18,5 +18,8 @@
   "homepage": "https://github.com/FedeMITIC/studiodottormacchi.it#readme",
   "devDependencies": {
     "uglify": "^0.1.5"
+  },
+  "dependencies": {
+    "uglify-js": "^3.3.13"
   }
 }
