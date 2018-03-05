@@ -11,10 +11,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
   <!-- Import font awesome -->
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS is imported by CDNs to not break relative URLs in CSS -->
   <!-- Main CSS file -->
   <link rel="stylesheet" type="text/css" href="./css/main.min.css">
   <!-- Custom CSS overrides -->
-  <link rel="stylesheet" type="text/css" href="./css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./css/custom.min.css">
 </head>
 <body>
   <!-- Following Menu -->
@@ -178,14 +179,14 @@
   <!-- Modal anchor point -->
   <div class="md-overlay"></div>
   <footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.js"></script>
+    <script src="./js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./js/semantic.min.js"></script>
     <script type="text/javascript" src="./js/main.min.js"></script>
     <script>
       // this is important for IEs
       var polyfilter_scriptpath = '/js/';
     </script>
-    <script src="js/css-filters-polyfill.js"></script>
+    <script src="js/css-filters-polyfill.min.js"></script>
   </footer>
 </body>
 </html>
