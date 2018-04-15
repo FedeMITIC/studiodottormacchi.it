@@ -1,3 +1,14 @@
+@font-face {
+    font-family: system;
+    font-style: normal;
+    font-weight: 300;
+    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+}
+
+body, h1, h2, h3, h4, h5, p, a, li, ul, ol, span {
+    font-family: "system" !important;
+}
+
 .hidden.menu {
     display: none;
 }
@@ -77,6 +88,10 @@
     color: #0E83CD;
 }
 
+.hero-center {
+    text-align: center;
+}
+
 .hero-row {
     padding: 2em 0 !important;
     background: #0E83CD !important;
@@ -114,6 +129,37 @@ li:after {
 
 #modal-12 > div > div > div.ui.form > div.ui.toggle.checkbox > label > a {
     color: #FFFFFF;
+}
+
+/* Card */
+.ui.move.reveal {
+    width: 305px;
+    height: 480px;
+    white-space: normal;
+}
+
+.ui.card {
+    height: 470px;
+}
+
+.ui.labeled.icon.menu .item{
+    min-width: 33.3333%;
+    max-width: 33.3333%;
+    font-size: 0.8em;
+    padding: 6px 2px;
+}
+
+.ui.pointing.menu {
+    cursor: pointer;
+}
+
+.ui.tab {
+    height: 320px;
+    overflow-y: auto;
+}
+
+.body-card {
+    margin: 30px;
 }
 
 @media only screen and (max-width: 700px) {
