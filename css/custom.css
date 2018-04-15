@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: system;
     font-style: normal;
     font-weight: 300;
@@ -7,7 +7,7 @@
 
 body, h1, h2, h3, h4, h5, p, a, li, ul, ol, span {
     font-family: "system" !important;
-}
+}*/
 
 .hidden.menu {
     display: none;
@@ -97,6 +97,14 @@ body, h1, h2, h3, h4, h5, p, a, li, ul, ol, span {
     background: #0E83CD !important;
     color: #FFFFFF;
     text-align: center;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 1.7em;
+}
+
+.hero-padding {
+    padding-bottom: 40px !important;
 }
 
 .container > section {

@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-<head>
-  <!-- Standard Meta -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="format-detection" content="telephone=no">
-  <!-- Site Properties -->
-  <title>Studiodottormacchi</title>
-  <!-- Import semantic ui -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
-  <!-- Import font awesome -->
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- CSS is imported by CDNs to not break relative URLs in CSS -->
-  <!-- Main CSS file -->
-  <link rel="stylesheet" type="text/css" href="./css/main.min.css">
-  <!-- Custom CSS overrides -->
-  <link rel="stylesheet" type="text/css" href="./css/custom.min.css">
-</head>
-<body>
-
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Site Properties -->
+    <title>Studiodottormacchi</title>
+    <!-- Import semantic ui -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
+    <!-- Import font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS is imported by CDNs to not break relative URLs in CSS -->
+    <!-- Main CSS file -->
+    <link rel="stylesheet" type="text/css" href="./css/main.min.css">
+    <!-- Custom CSS overrides -->
+    <link rel="stylesheet" type="text/css" href="./css/custom.min.css">
+  </head>
+  <body>
   <!-- Sidebar Menu -->
   <div class="ui vertical inverted sidebar menu">
     <a class="active item">Home</a>
-    <a class="item">Esami</a>
+    <a class="item">Prestazioni</a>
     <a class="item">Contatti</a>
   </div>
 
@@ -36,7 +35,7 @@
             <i class="sidebar icon"></i>
           </a>
           <a class="active item">Home</a>
-          <a class="item">Esami</a>
+          <a class="item">Prestazioni</a>
           <a class="item">Contatti</a>
         </div>
       </div>
@@ -69,8 +68,6 @@
       </div>
     </div>
 
-    <!-- Mappa -->
-    <div id="mappa"></div>
     <section>
       <div class="row fullwidth">
         <div class="col-xs-12 text-center">
@@ -95,76 +92,88 @@
         </div>
       </div>
     </div>
-
-    <div class="ui vertical stripe segment">
+    <div class="ui vertical stripe segment" style="border-bottom: none !important;">
       <div class="ui text container">
         <div class="center aligned row">
-          <h3 class="ui header hero-center">SPECIALISTI</h3>
+          <h3 class="ui header hero-center hero-padding">SPECIALISTI</h3>
         </div>
       </div>
       <div class="ui container">
-        <div class="body-card">
-          <div class="ui three stackable cards">
-            <div class="ui move reveal">
-              <div class="visible content">
-                <div class="ui card">
-                  <img class="ui image" src="./images/avatar/t.png">
-                  <div class="content">
-                    <div class="header">Alberto Macchi</div>
-                    <div class="description">
-                      <ul>
-                        <li>Specialista in Otorinolaringoiatria</li>
-                        <li>Dirigente Medico Asst Settelaghi</li>
-                        <li>Varese Clinica Otorinolaringoiatrica Università degli Studi dell'Insubria</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div  class="extra content" >
-                    <div class="ui labeled icon menu">
-                      <a class="item"><i class="wait icon"></i>2h 16min</a>
-                      <a class="item"><i class="food icon"></i>6 servings</a>
-                      <a class="item"><i class="signal icon"></i>Easy</a>
-                    </div>
-                  </div>
+        <div class="ui raised three stackable cards">
+          <div class="card">
+            <div class="image">
+              <img src="./images/avatar/alberto_macchi.jpg">
+            </div>
+            <div class="content">
+              <div class="header">Alberto Macchi</div>
+              <div class="meta"><i class="calendar check outline icon"></i>&nbsp;Martedì e Venerdì</div>
+              <div class="description">
+                <div class="ui list">
+                  <div class="item">Specialista in Otorinolaringoiatria</div>
+                  <div class="item">Dirigente Medico Asst Settelaghi - Varese</div>
+                  <div class="item">Clinica Otorinolaringoiatrica Università degli Studi dell'Insubria</div>
                 </div>
               </div>
-              <div class="hidden content">
-                <div class="ui card">
-                  <div class="content">
-                    <div class="ui pointing secondary menu">
-                      <div class="item active" data-tab="ingredients">Ingredients</div>
-                      <div class="item" data-tab="directions">Directions</div>
-                    </div>
-                    <div class="ui tab active" data-tab="ingredients">
-                      <h3>For pasta</h3>
-                      <div class="ui list">
-                        <div class="item"><i class="check circle red icon"></i>2 lb Italian "00" flour or all-purpose flour</div>
-                        <div class="item"><i class="check circle red icon"></i>1 oz fresh yeast</div>
-                        <div class="item"><i class="check circle red icon"></i>2 cups water</div>
-                        <div class="item"><i class="check circle red icon"></i>⅜ oz salt</div>
-                      </div>
-                      <h3>For dressing</h3>
-                      <div class="ui small list">
-                        <div class="item"><i class="check circle red icon"></i>½ cup extra virgin olive oil</div>
-                        <div class="item"><i class="check circle red icon"></i>1 lb mozzarella cheese</div>
-                        <div class="item"><i class="check circle red icon"></i>basil leaves to taste</div>
-                        <div class="item"><i class="check circle red icon"></i>1 lb canned tomatoes</div>
-                        <div class="item"><i class="check circle red icon"></i>salt to taste</div>
-                      </div>
-                    </div>
-                    <div class="ui tab" data-tab="directions">
-                      <div class="ui small list">
-                        <div class="item"><span class="ui red circular label">1</span> On a wooden or marble work surface, shape the flour into a well. Place the yeast, salt and warm water in the center. Be careful not to let the salt come in contact with the yeast. </div>
-                        <div class="item"><span class="ui red circular label">2</span> Knead the dough vigorously with your hands for 15-20 minutes, or in a mixer, until the dough is soft and smooth.</div>
-                        <div class="item"><span class="ui red circular label">3</span> Once you have the right consistency, adding a bit of water or flour if necessary, shape the dough into a ball. Cover with a plastic bowl so that the dough is protected from the air. Let rise for 3 or 4 hours at room temperature for about an hour in a warm place. </div>
-                        <div class="item"><span class="ui red circular label">4</span> Once the dough will be doubled in volume, ricavatene 6 loaves, modellateli in spherical shapes, cover with a sheet of plastic wrap and let them rise at room temperature for a couple of hours or in a warm place for about 45 minutes.</div>
-                        <div class="item"><span class="ui red circular label">5</span> As soon as the loaves have doubled in volume, prepare the tomato sauce and place it in a bowl. Add a pinch of salt and 1/3 of the olive oil.</div>
-                        <div class="item"><span class="ui red circular label">6</span> Knead the dough, then flattening them using your fingers.</div>
-                        <div class="item"><span class="ui red circular label">7</span> Use a ladle or a spoon to spread a good amount of tomato sauce on the pizza. Then, cover with mozzarella, torn into pieces. Garnish with a couple leaves of basil and bake in a 480° F oven for 5 or 6 minutes.</div>
-                        <div class="item"><span class="ui red circular label">8</span> Once ready, remove the pizza from the oven. Garnish with more basil and a drizzle of oil. Serve immediately.</div>
-                      </div>
-                    </div>
-                  </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/avatar/paola_terranova.jpg">
+            </div>
+            <div class="content">
+              <div class="header">Paola Terranova</div>
+              <div class="meta"><i class="calendar check outline icon"></i>&nbsp;Venerdì</div>
+              <div class="description">
+                <div class="ui list">
+                  <div class="item">Specialista in Otorinolaringoiatria</div>
+                  <div class="item">Dirigente Medico Asst Settelaghi - Varese</div>
+                  <div class="item">Clinica Otorinolaringoiatrica Università degli Studi dell'Insubria</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/avatar/elena_digilio.jpg">
+            </div>
+            <div class="content">
+              <div class="header">Elena Digilio</div>
+              <div class="meta"><i class="calendar check outline icon"></i>&nbsp;Giovedì</div>
+              <div class="description">
+                <div class="ui list">
+                  <div class="item">Specialista in Otorinolaringoiatria</div>
+                  <div class="item">Dirigente Medico Asst Settelaghi - Varese</div>
+                  <div class="item">Clinica Otorinolaringoiatrica Università degli Studi dell'Insubria</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/avatar/alberico_motolese.jpg">
+            </div>
+            <div class="content">
+              <div class="header">Alberico Motolese</div>
+              <div class="meta"><i class="calendar check outline icon"></i>&nbsp;Mercoledì</div>
+              <div class="description">
+                <div class="ui list">
+                  <div class="item">Specialista in Dermatologia ed Allergologia</div>
+                  <div class="item">Asst Settelaghi - Varese</div>
+                  <div class="item">Direttore S.C. Dermatologia</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image">
+              <img src="./images/avatar/raffaella_nisoli.jpg">
+            </div>
+            <div class="content">
+              <div class="header">Nisoli Raffaella</div>
+              <div class="meta"><i class="calendar check outline icon"></i>&nbsp;lunedì e martedì</div>
+              <div class="description">
+                <div class="ui list">
+                  <div class="item">Specialista in Fisiatria</div>
                 </div>
               </div>
             </div>
@@ -172,7 +181,19 @@
         </div>
       </div>
     </div>
-
+    <div class="ui grid container">
+      <div class="sixteen wide column">
+        <h3 class="ui header hero-center hero-padding" style="font-size: 1.7em;">LA NOSTRA STORIA</h3>
+        <div class="ui segment">
+          <span class="ui ribbon label">Lo studio</span>
+          <p style="padding-top: 10px; text-align: justify;">Lo Studio del Dottor Macchi ha iniziato la sua attività nell'anno 1993 e si è sviluppato nel corso degli anni, offrendo ulteriori prestazioni specialistiche e strumentali, attraverso la collaborazione di vari specialisti.
+            Le varie attività diagnostiche hanno permesso di inquadrare le problematiche dei pazienti in breve tempo offrendo un servizio esclusivo.
+            Inoltre il continuo sviluppo della formazione in ambito sanitario ha permesso di mantenere uno standard qualitativo professionale elevato.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="ui hidden divider"></div>
     <div class="ui inverted vertical footer segment">
       <div class="ui container">
         <div class="ui stackable inverted divided equal height stackable grid">
@@ -202,35 +223,20 @@
       </div>
     </div>
   </div>
-  <!-- Modal: hidden by default/page load -->
-  <div class="md-modal md-effect-12" id="modal-12">
-    <div class="md-content">
-        <iframe id="modulo" src="https://docs.google.com/forms/d/e/1FAIpQLSfE8OFl9RITMY4KWP82FWXQQwlnNjoywXdNAiZjU2tr-C_3vg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Caricamento in corso...</iframe>
-        <div class="container">
-          <section>
-            <p>
-              <button class="btn btn-5 btn-5b icon-times md-close"><span><i class="icon close"></i>Chiudi</span></button>
-            </p>
-          </section>
-        </div>
-    </div>
-  </div>
-  <!-- Modal anchor point -->
-  <div class="md-overlay"></div>
   <footer>
-    <script src="./js/jquery-3.3.1.slim.min.js"></script>
-    <script src="./js/semantic.min.js"></script>
-    <script type="text/javascript" src="./js/main.min.js"></script>
-    <script type="text/javascript">
-      $( document ).ready(function() {
-        $('.menu .item').tab();
-      });
-    </script>
-    <script>
-      // this is important for IEs
-      var polyfilter_scriptpath = '/js/';
-    </script>
-    <script src="js/css-filters-polyfill.min.js"></script>
+      <script src="./js/jquery-3.3.1.slim.min.js"></script>
+      <script src="./js/semantic.min.js"></script>
+      <script type="text/javascript" src="./js/main.min.js"></script>
+      <script type="text/javascript">
+        $( document ).ready(function() {
+          $('.menu .item').tab();
+        });
+      </script>
+      <script>
+        // this is important for IEs
+        var polyfilter_scriptpath = '/js/';
+      </script>
+      <script src="js/css-filters-polyfill.min.js"></script>
   </footer>
-</body>
+  </body>
 </html>
