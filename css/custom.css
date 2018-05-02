@@ -1,13 +1,6 @@
-/*@font-face {
-    font-family: system;
-    font-style: normal;
-    font-weight: 300;
-    src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+.ui.secondary.pointing.menu {
+    border-bottom: none;
 }
-
-body, h1, h2, h3, h4, h5, p, a, li, ul, ol, span {
-    font-family: "system" !important;
-}*/
 
 .hidden.menu {
     display: none;
@@ -139,7 +132,7 @@ li:after {
     color: #FFFFFF;
 }
 
-/* Card */
+/* Card *//*
 .ui.move.reveal {
     width: 305px;
     height: 480px;
@@ -148,7 +141,7 @@ li:after {
 
 .ui.card {
     height: 470px;
-}
+}*/
 
 .ui.labeled.icon.menu .item{
     min-width: 33.3333%;
@@ -161,14 +154,14 @@ li:after {
     cursor: pointer;
 }
 
-.ui.tab {
+/*.ui.tab {
     height: 320px;
     overflow-y: auto;
 }
 
 .body-card {
     margin: 30px;
-}
+}*/
 
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
