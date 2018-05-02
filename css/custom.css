@@ -132,17 +132,6 @@ li:after {
     color: #FFFFFF;
 }
 
-/* Card *//*
-.ui.move.reveal {
-    width: 305px;
-    height: 480px;
-    white-space: normal;
-}
-
-.ui.card {
-    height: 470px;
-}*/
-
 .ui.labeled.icon.menu .item{
     min-width: 33.3333%;
     max-width: 33.3333%;
@@ -153,15 +142,6 @@ li:after {
 .ui.pointing.menu {
     cursor: pointer;
 }
-
-/*.ui.tab {
-    height: 320px;
-    overflow-y: auto;
-}
-
-.body-card {
-    margin: 30px;
-}*/
 
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
