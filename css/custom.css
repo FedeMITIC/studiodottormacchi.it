@@ -2,6 +2,10 @@
     border-bottom: none;
 }
 
+.borderless {
+    border: none !important;
+}
+
 .hidden.menu {
     display: none;
 }

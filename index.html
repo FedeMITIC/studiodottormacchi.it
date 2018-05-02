@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="it" class="no-js">
   <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -10,8 +10,6 @@
     <title>Studiodottormacchi</title>
     <!-- Import semantic ui -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.0/dist/semantic.min.css">
-    <!-- Import font awesome -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS is imported by CDNs to not break relative URLs in CSS -->
     <!-- Main CSS file -->
     <link rel="stylesheet" type="text/css" href="./css/main.min.css">
@@ -22,7 +20,7 @@
     <!-- Sidebar Menu -->
     <div class="ui vertical inverted sidebar menu">
       <a href="#" class="active item">Home</a>
-      <a href="prestazioni.html" class="item">Prestazioni</a>
+      <a href="./pages/prestazioni.html" class="item">Prestazioni</a>
     </div>
 
     <!-- Page Contents -->
@@ -34,7 +32,7 @@
               <i class="sidebar icon"></i>
             </a>
             <a href="#" class="active item">Home</a>
-            <a href="prestazioni.html" class="item">Prestazioni</a>
+            <a href="./pages/prestazioni.html" class="item">Prestazioni</a>
           </div>
         </div>
         <div class="ui text container">
@@ -42,13 +40,7 @@
             <span class="hero">Studio Medico <span class="hero-color">Dottor Macchi</span></span>
           </h1>
           <h2>Visite mediche specialistiche</h2>
-          <div class="container">
-            <section>
-              <p>
-                <!--<button class="btn btn-1 btn-1e md-trigger" data-modal="modal-12"><i class="phone icon rotated no-mobile"></i>&nbsp;Contattaci</button>-->
-              </p>
-            </section>
-          </div>
+          <div class="container"></div>
         </div>
       </div>
 
@@ -57,9 +49,9 @@
           <div class="row">
             <div class="sixteen wide column">
               <ul class="hero-icon hero-list">
-                <li><i class="fa fa-phone"></i>&nbsp;<a style="color: white;" href="tel:+39-0332-287-631">0332 - 287631</a></li>
-                <li><i class="fa fa-envelope"></i>&nbsp;<a style="color: white;" href="mailto:info@studiodottormacchi.it">info@studiodottormacchi.it</a></li>
-                <li><i class="fa fa-clock-o"></i> Lun - Ven 09:00 - 12:30 / 15:00 - 18:00</li>
+                <li><i class="phone square icon rotated clockwise"></i>&nbsp;<a style="color: white;" href="tel:+39-0332-287-631">0332 - 287631</a></li>
+                <li><i class="envelope icon"></i>&nbsp;<a style="color: white;" href="mailto:info@studiodottormacchi.it">info@studiodottormacchi.it</a></li>
+                <li><i class="clock outline icon"></i>Lun - Ven 09:00 - 12:30 / 15:00 - 18:00</li>
               </ul>
             </div>
           </div>
@@ -79,7 +71,7 @@
           <div class="center aligned row">
             <div class="column">
               <h3>PRESTAZIONI</h3>
-              <p>Visualizza tutti gli esami effettuati nella struttura alla pagina dedicata, <a href="prestazioni.html" class="hero-color" href="#">qui</a>.</p>
+              <p>Visualizza tutti gli esami effettuati nella struttura alla pagina dedicata, <a href="./pages/prestazioni.html" class="hero-color">qui</a>.</p>
             </div>
             <div class="column">
               <h3>PRENOTAZIONI</h3>
@@ -90,6 +82,7 @@
           </div>
         </div>
       </div>
+
       <div class="ui vertical stripe segment" style="border-bottom: none !important;">
         <div class="ui text container">
           <div class="center aligned row">
@@ -196,26 +189,26 @@
         <div class="ui container">
           <div class="ui stackable inverted divided equal height stackable grid">
             <div class="three wide column">
-              <h4 class="ui inverted header">About</h4>
+              <h4 class="ui inverted header"><i class="hdd outline icon"></i>&nbsp;Privacy</h4>
               <div class="ui inverted link list">
-                <a href="#" class="item">Sitemap</a>
-                <a href="#" class="item">Contact Us</a>
-                <a href="#" class="item">Religious Ceremonies</a>
-                <a href="#" class="item">Gazebo Plans</a>
+                <a href="sitemap.xml" class="item">Sitemap</a>
+                <a href="./pages/cookies.html" class="item">Cookie policy</a>
               </div>
             </div>
-            <div class="three wide column">
-              <h4 class="ui inverted header">Services</h4>
+            <div class="five wide column">
+              <h4 class="ui inverted header"><i class="home icon"></i>&nbsp;Contatti</h4>
               <div class="ui inverted link list">
-                <a href="#" class="item">Banana Pre-Order</a>
-                <a href="#" class="item">DNA FAQ</a>
-                <a href="#" class="item">How To Access</a>
-                <a href="#" class="item">Favorite X-Men</a>
+                <a class="item" href="tel:+39-0332-287-631"><i class="phone square icon rotated clockwise"></i>&nbsp;0332 - 287631</a>
+                <a class="item" href="mailto:info@studiodottormacchi.it"><i class="envelope icon"></i>&nbsp;info@studiodottormacchi.it</a>
+              </div>
+              <h4 class="ui inverted header"><i class="clock outline icon"></i>&nbsp;Orari di apertura</h4>
+              <div class="ui inverted link list">
+                <span class="item">Dal Lunedì al Venerdì<br/>09:00 - 12:30 / 15:00 - 18:00</span>
               </div>
             </div>
-            <div class="seven wide column">
-              <h4 class="ui inverted header">Footer Header</h4>
-              <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+            <div class="six wide column">
+              <h4 class="ui inverted header"><i class="map marker alternate icon"></i>&nbsp;Dove siamo</h4>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.3963545024967!2d8.818780415399088!3d45.82334651742801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47867e2e362232ef%3A0x53f6cf630791a992!2sVia+Giulio+Cesare+Procaccini%2C+24%2C+21100+Varese+VA!5e0!3m2!1sen!2sit!4v1519597554373" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -234,7 +227,7 @@
         // this is important for IEs
         var polyfilter_scriptpath = '/js/';
       </script>
-      <script src="js/css-filters-polyfill.min.js"></script>
+      <script src="./js/css-filters-polyfill.min.js"></script>
     </footer>
   </body>
 </html>
