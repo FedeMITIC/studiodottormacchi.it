@@ -12,3 +12,5 @@ COPY .\css\main.min.css C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\studiodotto
 COPY .\css\custom.min.css C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\studiodottormacchi.it\css\
 REM copy images
 ROBOCOPY .\images\ C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\studiodottormacchi.it\images\ /E
+REM copy pages
+ROBOCOPY .\pages\ C:\Bitnami\wampstack-7.1.14-0\apache2\htdocs\studiodottormacchi.it\pages\ /E
